@@ -1,0 +1,8 @@
+<div>
+    <ng-container *ngIf="isLoggedIn$ | async; else publicContent">
+        <app-user-article></app-user-article>
+    </ng-container>
+    <ng-template #publicContent>
+        <app-article-list></app-article-list>
+    </ng-template>
+</div>

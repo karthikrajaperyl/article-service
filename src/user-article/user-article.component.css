@@ -1,0 +1,61 @@
+.article-form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.article-form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.article-form-group {
+    margin-bottom: 15px;
+}
+
+.article-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.article-form-group input[type="text"],
+.article-form-group input[type="date"],
+.article-form-group textarea,
+.article-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect total width */
+    font-size: 1rem;
+}
+
+.article-form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.article-form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.article-form-group button:hover {
+    background-color: #0056b3;
+}

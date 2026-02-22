@@ -1,0 +1,14 @@
+<div class="headerClass">
+    <span class="title">Explore the Ideas with Enlarge</span>
+    <div class="buttonClass">
+        <ng-container *ngIf="isLoggedIn$ | async; else loggedOutButtons">
+            <a [routerLink]="['/profile']">Profile</a>
+            <a [routerLink]="['/addArticle']" *ngIf="isContributor">Add Article</a>
+            <button (click)="logout()" class="logout-btn">Logout</button>
+        </ng-container>
+        <ng-template #loggedOutButtons>
+            <button routerLink="/login">Login</button>
+            <button routerLink="/register" class="register-btn">Register</button>
+        </ng-template>
+    </div>
+</div>

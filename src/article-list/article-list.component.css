@@ -1,0 +1,68 @@
+.article-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.innerArticleClass {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.innerArticleClass:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.innerArticleClass h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.innerArticleClass p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.innerArticleClass p:last-of-type {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.innerArticleClass button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    align-self: flex-start;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.innerArticleClass button:hover {
+    background-color: #0056b3;
+}
+
+/* Remove default list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,40 @@
+<div class="article-form-container">
+    <h2>Create New Article</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="article-form-group">
+            <label for="articleTitle">Title:</label>
+            <input type="text" id="articleTitle" name="title" [(ngModel)]="article.title" required>
+        </div>
+
+        <div class="article-form-group">
+            <label for="articleAuthor">Author:</label>
+            <input type="text" id="articleAuthor" name="author" [(ngModel)]="article.author" required>
+        </div>
+
+        <div class="article-form-group">
+            <label for="articleCategory">Category:</label>
+            <select id="articleCategory" name="category" required>
+                <option value="">--Select a Category--</option>
+                <option value="technology">Technology</option>
+                <option value="science">Science</option>
+                <option value="health">Health</option>
+                <option value="lifestyle">Lifestyle</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="article-form-group">
+            <label for="articlePublishedDate">Published Date:</label>
+            <input type="date" id="articlePublishedDate" name="publishedDate" [(ngModel)]="article.publishDate">
+        </div>
+
+        <div class="article-form-group">
+            <label for="articleContent">Content:</label>
+            <textarea id="articleContent" name="content" [(ngModel)]="article.fullContent" required></textarea>
+        </div>
+
+        <div class="article-form-group">
+            <button type="submit">Submit Article</button>
+        </div>
+    </form>
+</div>

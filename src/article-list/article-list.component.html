@@ -1,0 +1,14 @@
+<div class="article-list-container">
+    <ul *ngFor="let article of articleList">
+        <li>
+            <div class="innerArticleClass">
+                <h2>{{article.title}}</h2>
+                <p>{{article.author}}</p>
+                <p>{{article.publishDate}}</p>
+                <p>{{article.viewCount}}</p>
+                <p>{{article.halfContent}}</p>
+                <button>Read More</button>
+            </div>
+        </li>
+    </ul>
+</div>
